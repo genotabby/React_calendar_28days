@@ -1,0 +1,86 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App .calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 10vmin);
+  gap: 5vmin;
+  margin-top: 0vmin;
+  text-align: center;
+}
+
+.calendarCell {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25%;
+  border: 0.1vmin solid black;
+  background-color: orange;
+  width: 12vh;
+  height: 12vh;
+  color: black;
+}
+
+.App .selectors {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 10vmin);
+  gap: 10vmin;
+  margin-top: 0vmin;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+.Holiday,
+.Holiday_notSelected,
+.Work,
+.Work_notSelected,
+.Errands,
+.Errands_notSelected,
+.Sick,
+.Sick_notSelected {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  border: 0.1vmin solid black;
+  height: 100px;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.Holiday {
+  background-color: rgb(255, 215, 2);
+  box-shadow: 2px 2px 2px 2px black;
+}
+.Work {
+  background-color: blue;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.Errands {
+  background-color: green;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.Sick {
+  background-color: red;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.Holiday_notSelected {
+  background-color: rgb(255, 215, 2);
+}
+.Work_notSelected {
+  background-color: blue;
+}
+
+.Errands_notSelected {
+  background-color: green;
+}
+
+.Sick_notSelected {
+  background-color: red;
+}
