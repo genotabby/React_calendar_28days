@@ -8,12 +8,16 @@
 .App .calendar {
   display: grid;
   grid-template-columns: repeat(7, 10vmin);
-  gap: 5vmin;
+  gap: 4vmin;
   margin-top: 0vmin;
   text-align: center;
 }
 
-.calendarCell {
+.calendarCell,
+.Holiday_cell,
+.Work_cell,
+.Errands_cell,
+.Sick_cell {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -22,16 +26,36 @@
   background-color: orange;
   width: 12vh;
   height: 12vh;
-  color: black;
+  color: white;
+}
+
+.Holiday_cell {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25%;
+  border: 0.1vmin solid black;
+  width: 12vh;
+  height: 12vh;
+  background-color: rgb(255, 215, 2);
+}
+.Work_cell {
+  background-color: blue;
+}
+.Errands_cell {
+  background-color: green;
+}
+.Sick_cell {
+  background-color: red;
 }
 
 .App .selectors {
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(4, 10vmin);
-  gap: 10vmin;
-  margin-top: 0vmin;
-  margin-bottom: 10px;
+  gap: 12vh;
+  margin-top: 1vh;
+  margin-bottom: 12px;
   /* text-align: center; */
 }
 
@@ -48,8 +72,8 @@
   align-items: center;
   border-radius: 25px;
   border: 0.1vmin solid black;
-  height: 100px;
-  width: 100px;
+  width: 20vh;
+  height: 12vh;
   color: white;
   cursor: pointer;
 }

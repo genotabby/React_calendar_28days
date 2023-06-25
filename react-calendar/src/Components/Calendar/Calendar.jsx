@@ -59,7 +59,7 @@ export default function Calendar() {
       if (found.cat === "") {
         return "calendarCell";
       }
-      return `${found.cat}_notSelected`;
+      return `${found.cat}_cell`;
     }
     return "calendarCell";
   };
